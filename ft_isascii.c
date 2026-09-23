@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: balsaray <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 11:42:41 by balsaray          #+#    #+#             */
-/*   Updated: 2026/09/22 11:48:59 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/09/23 11:48:57 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
-	return (c >= 0 && c<= 127);
+	return (c >= 0 && c <= 127);
 }
