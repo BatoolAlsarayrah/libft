@@ -6,13 +6,22 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 14:56:07 by balsaray          #+#    #+#             */
-/*   Updated: 2026/09/23 15:16:29 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/09/23 15:29:51 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
+	size_t	i;
 
+	i = 0;
+	while (i < size)
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = '\0';
+	return (ft_strlen(src));
 }
