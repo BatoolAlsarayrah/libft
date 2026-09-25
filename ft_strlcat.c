@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 12:15:29 by balsaray          #+#    #+#             */
-/*   Updated: 2026/09/24 16:57:28 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/09/25 21:31:09 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dlen = nul;
 	slen = ft_strlen(src);
 	if (size < dlen)
-		return (size + dlen);
+		return (size + slen);
 	while (src[i] && i < (size - 1))
 	{
 		dst[nul] = src[i];
@@ -32,5 +32,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		nul++;
 	}
 	dst[nul] = '\0';
-	return(dlen + slen);
+	return (dlen + slen);
 }
