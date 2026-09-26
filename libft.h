@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 11:02:37 by balsaray          #+#    #+#             */
-/*   Updated: 2026/09/25 23:36:08 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/09/26 11:41:06 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 void	*ft_memset(void *s, int c, size_t n);
 char	*ft_strchr(const char *src, int c);
+char	*ft_strrchr(const char *src, int c);
 size_t	ft_strlen(const char *str);
 void	ft_bzero(void *s, size_t n);
 int		ft_isalpha(int c);

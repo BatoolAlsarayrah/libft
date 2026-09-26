@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 22:03:34 by balsaray          #+#    #+#             */
-/*   Updated: 2026/09/25 23:34:19 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/09/26 11:39:10 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ char	*ft_strchr(const char *src, int c)
 	while (src[i] != '\0')
 	{
 		if (src[i] == (char)c)
-			return ((char *)src);
-		src++;
+			return ((char *)src + i);
+		i++;
 	}
 	if (src[i] == (char)c)
-		return ((char *)src);
+		return ((char *)src + i);
 	return (NULL);
 }
