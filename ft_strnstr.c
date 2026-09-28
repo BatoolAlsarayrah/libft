@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/27 12:51:45 by balsaray          #+#    #+#             */
-/*   Updated: 2026/09/27 14:19:15 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/09/28 14:21:20 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 	size_t	i;
 	size_t	j;
 
-	if(to_find[0] == '\0')
+	if (to_find[0] == '\0')
 		return ((char *)str);
 	i = 0;
 	while (i < len && str[i] != '\0')

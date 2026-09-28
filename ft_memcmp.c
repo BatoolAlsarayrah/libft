@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/27 12:26:27 by balsaray          #+#    #+#             */
-/*   Updated: 2026/09/27 13:42:39 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/09/28 14:21:47 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
 	unsigned char	*s1;
 	unsigned char	*s2;
-	size_t	i;
+	size_t			i;
 
 	s1 = (unsigned char *)str1;
 	s2 = (unsigned char *)str2;
@@ -28,5 +28,4 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 	if (i >= n)
 		return (0);
 	return (s1[i] - s2[i]);
-
 }
