@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 11:02:37 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/03 09:42:11 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/03 12:31:33 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ void	*ft_calloc(size_t nmemb, size_t size);
 void	*ft_memset(void *s, int c, size_t n);
 char	*ft_strrchr(const char *src, int c);
 char	*ft_strchr(const char *src, int c);
+char	**ft_split(char const *s, char c);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
