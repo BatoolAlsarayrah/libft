@@ -6,16 +6,11 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/03 09:52:45 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/03 12:30:51 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/05 10:55:41 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	is_sep(char c, char sep)
-{
-	return (c == sep);
-}
 
 static int	count_words(char const *s, char sep)
 {
@@ -24,12 +19,12 @@ static int	count_words(char const *s, char sep)
 	count = 0;
 	while (*s)
 	{
-		while (*s && is_sep(*s, sep))
+		while (*s && (*s == sep))
 			s++;
 		if (*s)
 		{
 			count++;
-			while (*s && !is_sep(*s, sep))
+			while (*s && !(*s == sep))
 				s++;
 		}
 	}
@@ -44,7 +39,7 @@ static char	*allocpy(char const *s, char sep)
 
 	len = 0;
 	i = 0;
-	while (s[len] && !is_sep(s[len], sep))
+	while (s[len] && !(s[len] == sep))
 		len++;
 	word = (char *)malloc((len + 1) * sizeof(char));
 	if (!word)
@@ -65,39 +60,50 @@ static void	free_arr(char **res, int i)
 	free(res);
 }
 
-char	**ft_split(char const *s, char c)
+static int	fill_word(char **res, char const *s, char sep)
 {
-	char	**res;
-	int		i;
+	int	i;
 
-	if (!s)
-		return (NULL);
 	i = 0;
-	res = (char **)malloc((count_words(s, c) + 1) * sizeof(char *));
-	if (!res)
-		return (NULL);
 	while (*s)
 	{
-		while (*s && is_sep(*s, c))
+		while (*s && (*s == sep))
 			s++;
 		if (*s)
 		{
-			res[i] = allocpy(s, c);
+			res[i] = allocpy(s, sep);
 			if (!res[i])
-				return (free_arr(res, i - 1), NULL);
+			{
+				free_arr(res, i - 1);
+				return (0);
+			}
 			i++;
-			while (*s && !is_sep(*s, c))
+			while (*s && !(*s == sep))
 				s++;
 		}
 	}
 	res[i] = NULL;
+	return (1);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**res;
+
+	if (!s)
+		return (NULL);
+	res = (char **)malloc((count_words(s, c) + 1) * sizeof(char *));
+	if (!res)
+		return (NULL);
+	if (!fill_word(res, s, c))
+		return (NULL);
 	return (res);
 }
 
 // int	main(void)
 // {
-// 	//char const s[] = "  batool  hani      alsarayrah";
-// 	char **arr = ft_split(NULL,' ');
+// 	char const s[] = "  batool  hani      alsarayrah";
+// 	char **arr = ft_split(s,' ');
 // 	if (!arr)
 //         return (1);
 // 	int	i = 0;

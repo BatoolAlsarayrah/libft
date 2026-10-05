@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 11:02:37 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/03 12:31:33 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/04 14:59:06 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,12 @@
 # include <stdint.h>
 # include <strings.h>
 # include <unistd.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t len);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
@@ -33,6 +39,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strjoin(char const *s1, char const *s2);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 void	*ft_calloc(size_t nmemb, size_t size);
 void	*ft_memset(void *s, int c, size_t n);
 char	*ft_strrchr(const char *src, int c);
@@ -45,6 +52,7 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_bzero(void *s, size_t n);
 char	*ft_strdup(const char *src);
 size_t	ft_strlen(const char *str);
+t_list	*ft_lstnew(void *content);
 int		ft_atoi(const char *str);
 int		ft_tolower(int ch);
 int		ft_toupper(int ch);
