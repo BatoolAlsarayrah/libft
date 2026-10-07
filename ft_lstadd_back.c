@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 11:14:01 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/07 15:02:32 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/07 21:25:10 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new;
 		return ;
 	}
-	last -> next = new;
+	last->next = new;
 }
 
-// int	main()
+// int	main(void)
 // {
 // 	t_list	*head;
 // 	t_list	*node1;
@@ -46,5 +46,5 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // 	ft_lstadd_back(&head, node3);
 
 // 	printf("%s\n%p\n", (char *)(ft_lstlast(head))->content,
-// 	 (void *)(ft_lstlast)(head)->next);
+// 		(void *)(ft_lstlast)(head)->next);
 // }

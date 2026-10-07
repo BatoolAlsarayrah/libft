@@ -6,11 +6,10 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 15:55:42 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/07 15:57:35 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/07 21:37:54 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-
 }
