@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 11:02:37 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/07 21:33:57 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/07 22:00:45 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ char				*ft_strrchr(const char *src, int c);
 char				*ft_strchr(const char *src, int c);
 void				ft_lstdelone(t_list *lst, void (*del)(void *));
 char				**ft_split(char const *s, char c);
+void				ft_lstclear(t_list **lst, void (*del)(void *));
 unsigned int		ft_lstsize(t_list *lst);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putchar_fd(char c, int fd);
