@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/04 12:06:36 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/04 14:34:03 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/07 11:02:11 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list *new_node;
+	t_list	*new_node;
 
 	new_node = malloc(sizeof(t_list));
 	if (!new_node)

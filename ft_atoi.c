@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/27 14:20:06 by balsaray          #+#    #+#             */
-/*   Updated: 2026/09/27 14:48:46 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/07 11:18:01 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,9 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
+
+// int main()
+// {
+// 	const char *intmin = "-2147483648";
+// 	printf("%d", ft_atoi(intmin));
+// }
