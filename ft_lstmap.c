@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 15:55:42 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/07 22:07:21 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/07 22:25:26 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*newnode;
 
 	if (!lst || !f || !del)
-		return ;
+		return (NULL);
 	while (lst)
 	{
 		newnode = ft_lstnew(f(lst->content));

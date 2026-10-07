@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/26 11:42:41 by balsaray          #+#    #+#             */
-/*   Updated: 2026/09/27 10:50:57 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/07 22:40:09 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	}
 	if (i >= n)
 		return (0);
-	return (str1[i] - str2[i]);
+	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }

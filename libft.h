@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 11:02:37 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/07 22:00:45 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/07 22:13:28 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ char				*ft_strnstr(const char *str, const char *to_find,
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 int					ft_strncmp(const char *str1, const char *str2, size_t n);
+t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
+						void (*del)(void *));
 int					ft_memcmp(const void *str1, const void *str2, size_t n);
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
@@ -40,6 +42,7 @@ void				*ft_memchr(const void *str, int c, size_t n);
 char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_strjoin(char const *s1, char const *s2);
 void				ft_lstadd_front(t_list **lst, t_list *new);
+void				ft_lstiter(t_list *lst, void (*f)(void *));
 void				ft_lstadd_back(t_list **lst, t_list *new);
 void				*ft_calloc(size_t nmemb, size_t size);
 void				*ft_memset(void *s, int c, size_t n);
@@ -61,6 +64,7 @@ t_list				*ft_lstlast(t_list *lst);
 int					ft_atoi(const char *str);
 int					ft_tolower(int ch);
 int					ft_toupper(int ch);
+int					ft_isalpha(int c);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isdigit(int c);
