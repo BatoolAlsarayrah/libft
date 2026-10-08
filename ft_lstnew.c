@@ -24,7 +24,7 @@ t_list	*ft_lstnew(void *content)
 	return (new_node);
 }
 
-// int	main()
+// int	main(void)
 // {
 // 	t_list *s;
 

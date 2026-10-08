@@ -16,9 +16,9 @@ t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
 		return (NULL);
-	while (lst -> next)
+	while (lst->next)
 	{
-		lst = lst -> next;
+		lst = lst->next;
 	}
 	return (lst);
 }
@@ -42,5 +42,5 @@ t_list	*ft_lstlast(t_list *lst)
 // 	ft_lstadd_front(&head, node3);
 
 // 	printf("%s\n%p\n", (char *)(ft_lstlast(head))->content,
-// 	 (void *)(ft_lstlast)(head)->next);
+// 		(void *)(ft_lstlast)(head)->next);
 // }

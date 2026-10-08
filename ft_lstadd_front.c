@@ -20,7 +20,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 }
 
-// int	main()
+// int	main(void)
 // {
 // 	t_list	*head;
 // 	t_list	*node2;

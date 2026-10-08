@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 12:15:29 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/07 15:00:47 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/08 09:40:29 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	nul = ft_strlen(dst);
 	dlen = nul;
 	slen = ft_strlen(src);
-	if (size < dlen)
+	if (size <= dlen)
 		return (size + slen);
-	while (src[i] && i < (size - 1))
+	while (src[i] && dlen + i < (size - 1))
 	{
 		dst[nul] = src[i];
 		i++;

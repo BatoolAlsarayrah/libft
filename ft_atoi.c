@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/27 14:20:06 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/07 11:18:01 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/08 09:37:27 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,10 @@ int	ft_atoi(const char *str)
 	result = 0;
 	while ((str[i] == ' ' || (str[i] >= 9 && str[i] <= 13)))
 		i++;
-	if (str[i] == '-')
+	if (str[i] == '-' || str[i] == '+')
 	{
-		sign *= -1;
+		if (str[i] == '-')
+			sign *= -1;
 		i++;
 	}
 	while (ft_isdigit(str[i]))
@@ -38,6 +39,6 @@ int	ft_atoi(const char *str)
 
 // int main()
 // {
-// 	const char *intmin = "-2147483648";
+// 	const char *intmin = "+42dul";
 // 	printf("%d", ft_atoi(intmin));
 // }

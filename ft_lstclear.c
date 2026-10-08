@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 12:18:57 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/07 15:06:36 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/08 10:50:34 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,10 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		return ;
 	while (*lst)
 	{
-		temp = (*lst)-> next;
+		temp = (*lst)->next;
 		ft_lstdelone(*lst, del);
 		*lst = temp;
 	}
-	free(*lst);
 	*lst = NULL;
 }
 
