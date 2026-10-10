@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 22:01:28 by balsaray          #+#    #+#             */
-/*   Updated: 2026/09/25 22:57:34 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/09 11:36:56 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,16 @@
 
 int	ft_tolower(int ch)
 {
-	int	c;
-
-	c = ch;
-	if (c >= 'A' && c <= 'Z')
+	if (ch >= 'A' && ch <= 'Z')
 	{
-		c += 32;
+		ch += 32;
 	}
-	return (c);
+	return (ch);
 }
+// #include <ctype.h>
+// int main()
+// {
+// 	printf("mine: %d\n",ft_tolower(-1));
+// 	printf("original: %d\n",tolower(-1));
+// 	return (0);
+// }

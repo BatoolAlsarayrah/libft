@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 12:13:15 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/01 10:26:58 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/10 23:42:43 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
+// int main()
+// {
+// 	char *ft= ft_substr("hello", 1, 100);
+// 	printf("output: dst:%s\n",ft);
+// 	free(ft);
+// }

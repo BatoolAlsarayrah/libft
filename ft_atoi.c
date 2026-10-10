@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/27 14:20:06 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/08 09:37:27 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/10 21:49:40 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	sign;
-	int	result;
+	int		i;
+	int		sign;
+	long	result;
 
 	i = 0;
 	sign = 1;
@@ -34,11 +34,12 @@ int	ft_atoi(const char *str)
 		result = (result * 10) + str[i] - '0';
 		i++;
 	}
-	return (result * sign);
+	return ((int)(result * sign));
 }
 
 // int main()
 // {
-// 	const char *intmin = "+42dul";
-// 	printf("%d", ft_atoi(intmin));
+// 	const char *intmin = "-2147483648";
+// 	printf("%d\n", ft_atoi(intmin));
+// 	printf("%d\n", atoi(intmin));
 // }

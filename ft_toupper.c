@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 21:54:51 by balsaray          #+#    #+#             */
-/*   Updated: 2026/09/25 22:57:39 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/09 11:38:43 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,17 @@
 
 int	ft_toupper(int ch)
 {
-	int	c;
-
-	c = ch;
-	if (c >= 'a' && c <= 'z')
+	if (ch >= 'a' && ch <= 'z')
 	{
-		c -= 32;
+		ch -= 32;
 	}
-	return (c);
+	return (ch);
 }
+
+// #include <ctype.h>
+// int main()
+// {
+// 	printf("mine: %d\n",ft_toupper('A'));
+// 	printf("original: %d\n",toupper('A'));
+// 	return (0);
+// }

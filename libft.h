@@ -6,17 +6,15 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 11:02:37 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/07 22:13:28 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/09 14:16:41 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <stddef.h>
 # include <stdint.h>
 # include <stdio.h>
 # include <stdlib.h>
-# include <strings.h>
 # include <unistd.h>
 
 typedef struct s_list
