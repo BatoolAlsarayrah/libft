@@ -6,14 +6,13 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 11:02:37 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/09 14:16:41 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/11 12:12:59 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdint.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 

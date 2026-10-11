@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 22:30:07 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/02 22:37:32 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/11 10:36:42 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (!s)
+		return (NULL);
 	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }

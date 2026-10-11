@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 14:32:49 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/08 10:33:39 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/11 10:13:36 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	j;
 	char	*resstr;
 
+	if (!s1 || !set)
+		return (NULL);
 	i = 0;
 	j = ft_strlen(s1) - 1;
 	if (ft_strlen(s1) == 0)

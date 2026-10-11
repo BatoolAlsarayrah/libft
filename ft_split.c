@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/03 09:52:45 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/05 10:55:41 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/11 10:20:14 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ static int	count_words(char const *s, char sep)
 static char	*allocpy(char const *s, char sep)
 {
 	char	*word;
-	int		len;
-	int		i;
+	size_t	len;
+	size_t	i;
 
 	len = 0;
 	i = 0;

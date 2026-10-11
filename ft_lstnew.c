@@ -6,7 +6,7 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/04 12:06:36 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/07 11:02:11 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/11 10:51:30 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,7 @@ t_list	*ft_lstnew(void *content)
 // 	s= ft_lstnew("marah");
 // 	if (!s)
 // 		return(1);
-// 			printf("%s", (char *)s->content);
+// 	printf("%s", (char *)s->content);
 // 	free(s);
 // 	return(0);
-
 // }

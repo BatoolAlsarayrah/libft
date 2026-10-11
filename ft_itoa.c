@@ -6,13 +6,13 @@
 /*   By: balsaray <balsaray@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 17:55:39 by balsaray          #+#    #+#             */
-/*   Updated: 2026/10/03 09:39:19 by balsaray         ###   ########.fr       */
+/*   Updated: 2026/10/11 10:26:27 by balsaray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_count(int n)
+static size_t	ft_count(long n)
 {
 	size_t	i;
 
